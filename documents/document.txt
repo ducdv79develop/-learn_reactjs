@@ -1,0 +1,18 @@
+1. Khởi tạo react app
+    npm install -g create-react-app
+
+    create-react-app ducdv79
+    cd ducdv79
+    npm start
+
+    npm build
+
+2. cài đặt package và plugin
+    npm install --save-dev webpack webpack-dev-server html-webpack-plugin
+    npm install react --save
+    npm install react-dom --save
+    npm install babel-core
+    npm install babel-loader
+    npm install babel-preset-react
+    npm install babel-preset-es2015
+
