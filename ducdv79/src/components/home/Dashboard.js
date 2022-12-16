@@ -50,7 +50,7 @@ class Dashboard extends Component {
 }
 
 Dashboard.prototypes = {
-    name: PropTypes.string,
+    name: PropTypes.number,
     type: PropTypes.oneOf(["iPhone", "iPad", "Mac", "SmartWatch"]),
     public_year: PropTypes.oneOfType([
         PropTypes.string,

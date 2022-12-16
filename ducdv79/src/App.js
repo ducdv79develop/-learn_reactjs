@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Dashboard from './components/home/Dashboard';
 import DashboardFunction from './components/home/DashboardFunction';
+import ApiService from './components/api/ApiService';
 
 
 Dashboard.defaultProps = {
@@ -24,9 +25,12 @@ class App extends Component {
     render() {
         return (
             <div>
-                <Dashboard name="Ducdv79" age="18"/>
-                <DashboardFunction name="Ducdv79 Function" gender="male"/>
-                <p>xin chao</p>
+                {/* <Dashboard name="Ducdv79" age="18"/> */}
+                {/* <DashboardFunction name="Ducdv79 Function" gender="male"/> */}
+
+                <ApiService />
+
+                <h1>App.js</h1>
             </div>
         );
     }
