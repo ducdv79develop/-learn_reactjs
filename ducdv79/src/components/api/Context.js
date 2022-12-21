@@ -51,8 +51,7 @@ class UpdateNumber extends React.Component {
     render() {
         return (
             <button onClick={() => {
-                //Gọi hàm update để thực hiện update số.
-                console.log(this.context.update())
+                this.context.update()
             }}>Update Number</button>
         );
     }

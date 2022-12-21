@@ -1,0 +1,4 @@
+export const 
+    ADD_NEW_NOTE = "ADD_NEW_NOTE",
+    EDIT_NOTE = "EDIT_NOTE",
+    REMOVE_NOTE = "REMOVE_NOTE";

@@ -1,41 +1,25 @@
-import React, { Component } from 'react';
-// import Dashboard from './components/home/Dashboard';
-// import DashboardFunction from './components/home/DashboardFunction';
-// import ApiService from './components/api/ApiService';
-import ComponentOng from "./components/api/Context";
+import React from 'react'
+import { 
+    Route, 
+    Routes // instead of "Switch"
+} from 'react-router-dom';
 
+import AppDemo from './AppDemo';
+import Home from './components/admin/Home';
+import Admin from './components/admin/Admin';
+import User from './components/admin/User';
+import Error from './components/admin/Error';
 
-// Dashboard.defaultProps = {
-//     number1: 2,
-//     number2: 3,
-//     name: 'Airpods 2',
-//     type: 'Airpod',
-//     public_year: 2019
-// }
-//
-// DashboardFunction.defaultProps = {
-//     number1: '2',
-//     number2: '3',
-//     name: 'iPhone Xs Max',
-//     type: 'iPhone',
-//     public_year: 2018,
-//     storage: '64 GB'
-// }
-
-class App extends Component {
-    render() {
-        return (
-            <div>
-                {/* <Dashboard name="Ducdv79" age="18"/> */}
-                {/* <DashboardFunction name="Ducdv79 Function" gender="male"/> */}
-
-                {/*<ApiService />*/}
-                <ComponentOng />
-
-                <h1>App.js</h1>
-            </div>
-        );
-    }
+export default function App() {
+    return (
+        <>
+            <Routes>
+                <Route path="/" element={<AppDemo/>} exact />
+                <Route path="/home" element={<Home/>} />
+                <Route path="/admin" element={<Admin/>} />
+                <Route path="/user" element={<User/>} />
+                <Route path="*" element={<Error/>} />
+            </Routes>
+        </>
+    )
 }
-
-export default App;
